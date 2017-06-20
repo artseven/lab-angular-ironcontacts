@@ -18,9 +18,9 @@
 <button (click)="addContact">Submit New Contact</button>
 <ul>
   <li *ngFor="let contact of contacts">
-      {{ contact.name }}
-      {{ contact.email}}
-      {{ contact.phoneNumber}}
-      <img style="width: 100px; height: auto;" src="{{ contact.image }}">
+      <ul>{{ contact.name }}</ul>
+      <ul>{{ contact.email}}</ul>
+      <ul>{{ contact.phoneNumber}}</ul>
+      <ul><img style="width: 120px; height: auto;" src="{{ contact.image }}"></ul>
   </li>
 </ul>
